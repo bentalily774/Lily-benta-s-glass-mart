@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Glass Solutions - Glassmart</title>
+    <link rel="stylesheet" href="style-1.css">
+    <style>
+        .custom-details { padding: 50px 8%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .back-link { display: inline-block; margin-bottom: 25px; text-decoration: none; color: #004d7a; font-weight: bold; transition: 0.3s; }
+        .back-link:hover { color: #007bff; transform: translateX(-5px); }
+        
+        .custom-section { margin-bottom: 45px; }
+        .section-banner { 
+            background: #004d7a; 
+            color: white; 
+            padding: 15px 25px; 
+            border-radius: 4px; 
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-left: 8px solid #002b44;
+        }
+
+        .custom-table { width: 100%; border-collapse: collapse; background: white; border: 1px solid #ddd; }
+        .custom-table th, .custom-table td { padding: 18px; text-align: left; border: 1px solid #eee; }
+        .custom-table th { background-color: #f4f4f4; color: #222; font-weight: 700; width: 25%; }
+        
+        .quote-box { 
+            background: #fff8e1; 
+            border: 1px solid #ffe082; 
+            padding: 25px; 
+            border-radius: 8px; 
+            margin-top: 40px; 
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .custom-table, .custom-table thead, .custom-table tbody, .custom-table th, .custom-table td, .custom-table tr { display: block; }
+            .custom-table thead { display: none; }
+            .custom-table td { position: relative; padding-left: 50%; border-bottom: 1px solid #eee; }
+            .custom-table td::before { 
+                content: attr(data-label); position: absolute; left: 15px; font-weight: bold; color: #004d7a;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Glassmart</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#about us">about us</a></li>
+            <li><a href="index.html#products">products</a></li>
+            <li><a href="index.html#contact us">contact us</a></li>
+        </ul>
+    </nav>
+
+    <main class="custom-details">
+        <a href="index.html#products" class="back-link">← Back to All Products</a>
+        <h1>Custom Glass & Fabrication</h1>
+        <p>From precision CNC cutting to high-tech switchable privacy glass, we bring your unique designs to life.</p>
+
+        <div class="custom-section">
+            <h2 class="section-banner">1. Precision Cutting</h2>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Customization Options</th>
+                        <th>Common Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Type"><strong>Bespoke Shapes</strong></td>
+                        <td data-label="Options">CNC-cut circles, ovals, triangles, or "notched" glass for corners.</td>
+                        <td data-label="Applications">Custom table covers, odd-shaped windows, DIY furniture.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Type"><strong>Hole Drilling</strong></td>
+                        <td data-label="Options">Pre-drilled holes for handles, hinges, or electrical outlets.</td>
+                        <td data-label="Applications">Glass railings, shower doors, and standoff signage.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="custom-section">
+            <h2 class="section-banner">2. Edge & Surface Work</h2>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Customization Options</th>
+                        <th>Common Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Type"><strong>Specialized Edging</strong></td>
+                        <td data-label="Options">Choice of Flat Polish, Beveled (slanted), Ogee (S-curve), or Seamed (sanded).</td>
+                        <td data-label="Applications">Luxury dining tables, mirrors, and high-end shelving.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Type"><strong>Sandblasting</strong></td>
+                        <td data-label="Options">Permanent etching of logos, patterns, or full privacy frosting.</td>
+                        <td data-label="Applications">Commercial office doors, branded partitions, signage.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="custom-section">
+            <h2 class="section-banner">3. Architectural Custom</h2>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Customization Options</th>
+                        <th>Common Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Type"><strong>Back-Painted Glass</strong></td>
+                        <td data-label="Options">Glass painted on one side in any custom RAL or Pantone color.</td>
+                        <td data-label="Applications">Kitchen backsplashes, colorful whiteboards, wall cladding.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Type"><strong>Bent / Curved Glass</strong></td>
+                        <td data-label="Options">Glass heated and cooled over a mold to create a permanent curve.</td>
+                        <td data-label="Applications">Corner display cases, curved windows, architectural railings.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="custom-section">
+            <h2 class="section-banner">4. High-Tech / Smart</h2>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Customization Options</th>
+                        <th>Common Applications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Type"><strong>Switchable Privacy</strong></td>
+                        <td data-label="Options">Laminated glass with a PDLC film that turns opaque at a flick.</td>
+                        <td data-label="Applications">Executive boardrooms, high-end residential bathrooms.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Type"><strong>One-Way Mirror</strong></td>
+                        <td data-label="Options">Partial silvering that reflects on one side while transparent on other.</td>
+                        <td data-label="Applications">Security observation rooms, "hidden" TV mirror installs.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="quote-box">
+            <h3>Need a Custom Quote?</h3>
+            <p>Send your blueprints or measurements to <strong>glassmart@gmail.com</strong> for a specialized estimate.</p>
+            <a href="index.html#contact us" class="back-link">Go to Contact Section</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>2026 LIBENAS GLASSMART  WHOLESALE | Kerugoya, Kenya<p>
+    </footer>
+
+</body>
+</html>

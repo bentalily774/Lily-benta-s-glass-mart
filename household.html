@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Household Glass - Glassmart</title>
+    <link rel="stylesheet" href="style-1.css">
+    <style>
+        .household-details { padding: 50px 8%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .back-link { display: inline-block; margin-bottom: 25px; text-decoration: none; color: #004d7a; font-weight: bold; transition: 0.3s; }
+        .back-link:hover { color: #007bff; transform: translateX(-5px); }
+        
+        .cat-section { margin-bottom: 40px; }
+        .cat-header { 
+            background: #004d7a; 
+            color: white; 
+            padding: 12px 20px; 
+            border-radius: 5px; 
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .household-table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .household-table th, .household-table td { border: 1px solid #eee; padding: 15px; text-align: left; }
+        .household-table th { background-color: #f8f9fa; color: #333; font-weight: 600; }
+        
+        /* Mobile optimization */
+        @media (max-width: 768px) {
+            .household-table, .household-table thead, .household-table tbody, .household-table th, .household-table td, .household-table tr { 
+                display: block; 
+            }
+            .household-table thead tr { position: absolute; top: -9999px; left: -9999px; }
+            .household-table td { border: none; border-bottom: 1px solid #eee; position: relative; padding-left: 50%; }
+            .household-table td:before { 
+                position: absolute; left: 15px; width: 45%; padding-right: 10px; white-space: nowrap; 
+                content: attr(data-label); font-weight: bold; color: #004d7a;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Glassmart</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#about us">about us</a></li>
+            <li><a href="index.html#products">products</a></li>
+            <li><a href="index.html#contact us">contact us</a></li>
+        </ul>
+    </nav>
+
+    <main class="household-details">
+        <a href="index.html#products" class="back-link">← Back to All Products</a>
+        <h1>Household Glass Collection</h1>
+        <p>Premium glass solutions for every corner of your home, from the kitchen to the living room furniture.</p>
+
+        <div class="cat-section">
+            <h2 class="cat-header">1. Kitchen & Dining</h2>
+            <table class="household-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Key Features</th>
+                        <th>Primary Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Product"><strong>Borosilicate Bakeware</strong></td>
+                        <td data-label="Features">Thermal shock resistant; can go from freezer to oven.</td>
+                        <td data-label="Use Case">Casseroles, roasting, and food reheating.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Glass Drinkware</strong></td>
+                        <td data-label="Features">Includes tumblers, highballs, and stemware (wine/flutes).</td>
+                        <td data-label="Use Case">Daily hydration, formal dining, and hosting.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Mixing Bowls</strong></td>
+                        <td data-label="Features">Deep-welled, tempered glass for impact resistance.</td>
+                        <td data-label="Use Case">Food prep, baking, and serving salads.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Serving Pitchers</strong></td>
+                        <td data-label="Features">Features pouring spouts and ergonomic handles.</td>
+                        <td data-label="Use Case">Serving iced tea, water, or sangria at the table.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cat-section">
+            <h2 class="cat-header">2. Living Room & Decor</h2>
+            <table class="household-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Key Features</th>
+                        <th>Primary Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Product"><strong>Glass Vases</strong></td>
+                        <td data-label="Features">Available in "Bud," "Cylinder," or "Trumpet" shapes.</td>
+                        <td data-label="Use Case">Floral arrangements and centerpiece displays.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Hurricane Lamps</strong></td>
+                        <td data-label="Features">Tall, open-ended glass cylinders to protect flames.</td>
+                        <td data-label="Use Case">Patio lighting and large pillar candle displays.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Glass Cloches</strong></td>
+                        <td data-label="Features">Bell-shaped protective domes with a base.</td>
+                        <td data-label="Use Case">Displaying desserts, plants, or collectibles.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Decorative Trays</strong></td>
+                        <td data-label="Features">Flat, polished glass with beveled or metallic edges.</td>
+                        <td data-label="Use Case">Organizing perfumes, jewelry, or coffee table books.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cat-section">
+            <h2 class="cat-header">3. Bathroom & Vanity</h2>
+            <table class="household-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Key Features</th>
+                        <th>Primary Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Product"><strong>Pump Dispensers</strong></td>
+                        <td data-label="Features">Heavy-bottomed glass with corrosion-resistant pumps.</td>
+                        <td data-label="Use Case">Hand soap, lotion, or luxury dish soap.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Apothecary Canisters</strong></td>
+                        <td data-label="Features">Small, lidded jars designed for easy access.</td>
+                        <td data-label="Use Case">Organizing cotton balls, swabs, and bath salts.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Wall Mirrors</strong></td>
+                        <td data-label="Features">Reflective sheets with polished or framed edges.</td>
+                        <td data-label="Use Case">Vanity use, hallway decor, and brightening rooms.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="cat-section">
+            <h2 class="cat-header">4. Furniture & Storage</h2>
+            <table class="household-table">
+                <thead>
+                    <tr>
+                        <th>Product Type</th>
+                        <th>Key Features</th>
+                        <th>Primary Use Case</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Product"><strong>Tempered Tabletops</strong></td>
+                        <td data-label="Features">Thick (usually 6mm - 12mm), impact-resistant glass.</td>
+                        <td data-label="Use Case">Protecting wooden desks or as standalone tops.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Floating Shelves</strong></td>
+                        <td data-label="Features">High-load tempered glass with polished "pencil" edges.</td>
+                        <td data-label="Use Case">Minimalist storage in kitchens or bathrooms.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Product"><strong>Cabinet Inserts</strong></td>
+                        <td data-label="Features">Patterned or "Seeded" (bubbled) glass sheets.</td>
+                        <td data-label="Use Case">Replacing wooden cabinet panels for a modern look.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    <footer>
+        <p>2026 LIBENAS GLASSMART WHOLESALE | Kerugoya, Kenya<p>
+    </footer>
+
+</body>
+</html>

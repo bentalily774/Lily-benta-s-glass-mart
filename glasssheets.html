@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Sheets Specifications - Glassmart</title>
+    <link rel="stylesheet" href="style-1.css">
+    <style>
+        .details-container { padding: 50px 5%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .back-link { display: inline-block; margin-bottom: 25px; text-decoration: none; color: #004d7a; font-weight: bold; }
+        
+        .spec-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+            background: white;
+            font-size: 0.95rem;
+        }
+
+        .spec-table th, .spec-table td { 
+            border: 1px solid #ddd; 
+            padding: 12px 15px; 
+            text-align: left; 
+        }
+
+        .spec-table th { 
+            background-color: #004d7a; 
+            color: white; 
+            position: sticky;
+            top: 0;
+        }
+
+        .spec-table tr:nth-child(even) { background-color: #f9f9f9; }
+        .spec-table tr:hover { background-color: #f1f7ff; }
+
+        .tech-note {
+            margin-top: 30px;
+            padding: 20px;
+            background: #eef4f8;
+            border-left: 5px solid #004d7a;
+            border-radius: 4px;
+        }
+
+        /* Mobile View */
+        @media (max-width: 900px) {
+            .spec-table, .spec-table thead, .spec-table tbody, .spec-table th, .spec-table td, .spec-table tr { 
+                display: block; 
+            }
+            .spec-table thead { display: none; }
+            .spec-table td { 
+                position: relative; 
+                padding-left: 45%; 
+                border: none; 
+                border-bottom: 1px solid #eee; 
+            }
+            .spec-table td::before { 
+                content: attr(data-label); 
+                position: absolute; 
+                left: 15px; 
+                font-weight: bold; 
+                color: #004d7a;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Glassmart</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#about us">about us</a></li>
+            <li><a href="index.html#products">products</a></li>
+            <li><a href="index.html#contact us">contact us</a></li>
+        </ul>
+    </nav>
+
+    <main class="details-container">
+        <a href="index.html#products" class="back-link">← Back to Products</a>
+        <h1>Technical Glass Sheet Specifications</h1>
+        <p>A comprehensive guide to our glass types, weights, and primary architectural applications.</p>
+
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th>Glass Type</th>
+                    <th>Thicknesses (mm)</th>
+                    <th>Weight (Approx. kg/m²)</th>
+                    <th>Key Features</th>
+                    <th>Primary Applications</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Type"><strong>Clear Float</strong></td>
+                    <td data-label="Thickness">2, 3, 4, 5, 6, 8, 10, 12</td>
+                    <td data-label="Weight">2.5 kg per mm</td>
+                    <td data-label="Features">Economical, high clarity, easy to cut on-site.</td>
+                    <td data-label="Apps">Windows, picture frames (2mm), small tabletops.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"><strong>Low-Iron</strong></td>
+                    <td data-label="Thickness">4, 6, 10, 12, 15, 19</td>
+                    <td data-label="Weight">2.5 kg per mm</td>
+                    <td data-label="Features">Eliminates green tint; 91%+ light transmission.</td>
+                    <td data-label="Apps">Display cases, high-end retail, white-back splashbacks.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"><strong>Tempered</strong></td>
+                    <td data-label="Thickness">4, 5, 6, 8, 10, 12, 15, 19</td>
+                    <td data-label="Weight">Same as Float</td>
+                    <td data-label="Features">5x stronger than float; shatters into blunt granules.</td>
+                    <td data-label="Apps">Shower doors, glass railings, entry doors.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"><strong>Laminated</strong></td>
+                    <td data-label="Thickness">6.38, 8.38, 10.38, 12.38</td>
+                    <td data-label="Weight">15.5 - 31 kg</td>
+                    <td data-label="Features">Two sheets bonded by PVB; stays intact if broken.</td>
+                    <td data-label="Apps">Shopfronts, soundproofing, skylights, overhead glass.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"><strong>Wired Glass</strong></td>
+                    <td data-label="Thickness">6, 7</td>
+                    <td data-label="Weight">≈ 17.5 kg</td>
+                    <td data-label="Features">Internal wire mesh; holds glass in frame during fire.</td>
+                    <td data-label="Apps">Fire-rated doors, industrial windows, vintage decor.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"><strong>Low-E</strong></td>
+                    <td data-label="Thickness">4, 6</td>
+                    <td data-label="Weight">Same as Float</td>
+                    <td data-label="Features">Microscopic metal coating; reflects thermal energy.</td>
+                    <td data-label="Apps">Energy-efficient home windows, double glazing.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"><strong>Tinted</strong></td>
+                    <td data-label="Thickness">4, 5, 6, 10</td>
+                    <td data-label="Weight">Same as Float</td>
+                    <td data-label="Features">Colors (Bronze, Grey, Green, Blue) reduce solar heat.</td>
+                    <td data-label="Apps">Commercial building facades, privacy windows.</td>
+                </tr>
+                <tr>
+                    <td data-label="Type"<strong>Acid-Etched</strong></td>
+                    <td data-label="Thickness">4, 6, 10, 12</td>
+                    <td data-label="Weight">Same as Float</td>
+                    <td data-label="Features">Chemical matte finish; translucent for privacy.</td>
+                    <td data-label="Apps">Office partitions, bathroom windows, furniture.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="tech-note">
+            <h3>Ordering Guide</h3>
+            <p><strong>Calculating Weight:</strong> To calculate the total weight of float glass, multiply the area (m²) by the thickness (mm) and then by 2.5kg.</p>
+            <p><em>Example: A 1m x 1m sheet of 10mm glass weighs 25kg.</em></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>2026 LIBENAS GLASSMART WHOLESALE | Kerugoya, Kenya<p>
+    </footer>
+
+</body>
+</html>

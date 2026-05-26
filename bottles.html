@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottles & Containers - Glassmart</title>
+    <link rel="stylesheet" href="style-1.css">
+    <style>
+        .container-details { padding: 50px 8%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .back-link { display: inline-block; margin-bottom: 25px; text-decoration: none; color: #004d7a; font-weight: bold; transition: 0.3s; }
+        .back-link:hover { color: #007bff; transform: translateX(-5px); }
+        
+        .category-group { margin-bottom: 40px; }
+        .category-title { 
+            background: #004d7a; 
+            color: white; 
+            padding: 12px 20px; 
+            border-radius: 5px; 
+            margin-bottom: 15px;
+        }
+
+        .bottle-table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .bottle-table th, .bottle-table td { border: 1px solid #eee; padding: 15px; text-align: left; }
+        .bottle-table th { background-color: #f8f9fa; color: #333; font-weight: 600; width: 25%; }
+        
+        .feature-tag { background: #e7f3ff; color: #004d7a; padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; display: inline-block; margin: 2px; }
+        
+        @media (max-width: 768px) {
+            .bottle-table, .bottle-table tbody, .bottle-table tr, .bottle-table td { display: block; width: 100%; }
+            .bottle-table th { display: none; }
+            .bottle-table td { border-bottom: 1px solid #ddd; position: relative; padding-left: 50%; }
+            .bottle-table td::before { content: attr(data-label); position: absolute; left: 15px; font-weight: bold; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Glassmart</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">home</a></li>
+            <li><a href="index.html#about us">about us</a></li>
+            <li><a href="index.html#products">products</a></li>
+            <li><a href="index.html#contact us">contact us</a></li>
+        </ul>
+    </nav>
+
+    <main class="container-details">
+        <a href="index.html#products" class="back-link">← Back to All Products</a>
+        <h1>Bottles & Containers Catalog</h1>
+        <p>Providing specialized glass packaging for food, beauty, and industrial sectors.</p>
+
+        <div class="category-group">
+            <h2 class="category-title">1. Beverages & Spirits</h2>
+            <table class="bottle-table">
+                <thead>
+                    <tr>
+                        <th>Container Type</th>
+                        <th>Key Features</th>
+                        <th>Best Used For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Boston Round</strong></td>
+                        <td>Rounded shoulders, thick glass, narrow neck.</td>
+                        <td>Syrups, juices, wellness shots, cold brew.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Swing-Top (Fido)</strong></td>
+                        <td>Built-in ceramic/plastic stopper with wire bale.</td>
+                        <td>Kombucha, beer, carbonated drinks, infused oils.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wine Bottles</strong></td>
+                        <td>Tall; Bordeaux (high shoulder) or Burgundy (sloped).</td>
+                        <td>Wine, spirits, dessert vinegars, decorative vases.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flasks</strong></td>
+                        <td>Flat, rectangular shape with curved edges.</td>
+                        <td>Spirits, high-end extracts, craft coffee concentrates.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category-group">
+            <h2 class="category-title">2. Food & Preservation</h2>
+            <table class="bottle-table">
+                <thead>
+                    <tr>
+                        <th>Container Type</th>
+                        <th>Key Features</th>
+                        <th>Best Used For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mason Jars</strong></td>
+                        <td>Threaded neck, heat-resistant, traditional look.</td>
+                        <td>Canning, pickling, overnight oats, DIY gifts.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hexagon Jars</strong></td>
+                        <td>Six-sided geometric walls, premium aesthetic.</td>
+                        <td>Gourmet honey, jams, spices, artisanal chutneys.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Straight-Sided Jars</strong></td>
+                        <td>Wide mouth, no "neck" or shoulders.</td>
+                        <td>Salsas, pâtés, candle making, cosmetic balms.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Orcio Jars</strong></td>
+                        <td>Distinctive "curvy" urn shape.</td>
+                        <td>High-end olives, pickled vegetables, specialty oils.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category-group">
+            <h2 class="category-title">3. Beauty & Apothecary</h2>
+            <table class="bottle-table">
+                <thead>
+                    <tr>
+                        <th>Container Type</th>
+                        <th>Key Features</th>
+                        <th>Best Used For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Dropper Bottles</strong></td>
+                        <td>Small capacity, usually paired with glass pipettes.</td>
+                        <td>Essential oils, facial serums, eye drops.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Roll-on Bottles</strong></td>
+                        <td>Slim, portable vials with ball applicators.</td>
+                        <td>Perfumes, aromatherapy blends, lip gloss.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pump Bottles</strong></td>
+                        <td>Heavy-duty base with wide neck for pumps.</td>
+                        <td>Lotions, liquid soaps, foundation, hair serums.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Amber/Cobalt Vials</strong></td>
+                        <td>Dark colored glass for 99% UV protection.</td>
+                        <td>Vitamins, light-sensitive chemicals, medicine.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="category-group">
+            <h2 class="category-title">4. Storage & Decorative</h2>
+            <table class="bottle-table">
+                <thead>
+                    <tr>
+                        <th>Container Type</th>
+                        <th>Key Features</th>
+                        <th>Best Used For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Apothecary Jars</strong></td>
+                        <td>Large, ornate jars with matching glass stoppers.</td>
+                        <td>Bath salts, candy displays, luxury home decor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hermetic Jars</strong></td>
+                        <td>Heavy glass with rubber gasket and metal clamp.</td>
+                        <td>Bulk pantry storage (flour, pasta, coffee beans).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Carboys/Demijohns</strong></td>
+                        <td>Massive bulbous jugs (often 1–5 gallons).</td>
+                        <td>Fermentation, large scale terrariums, floor vases.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2026 LIBENAS GLASSMART WHOLESALE | Kerugoya, Kenya<p>
+    </footer>
+
+</body>
+</html>
