@@ -1,0 +1,181 @@
+/* style-1.css */
+
+/* Basic reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #e0e2e8;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* Navbar */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #0b3d5c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.logo{
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: lowercase;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.nav-links a:hover{
+  background: rgba(255,255,255,0.15);
+}
+
+/* Titles */
+h1{
+  text-align: center;
+  margin: 28px 10px 10px;
+  font-size: 2rem;
+}
+
+section{
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0b3d5c;
+}
+
+/* Home image */
+#home img{
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+  margin-top: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  display: block;
+}
+
+/* Products layout */
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.card{
+  flex: 1 1 220px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Card text */
+.card h3{
+  color: #0b3d5c;
+  margin-bottom: 10px;
+}
+
+.card p{
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* ✅ Product images inside cards */
+.card img{
+  width: 100%;
+  height: 180px;         /* fixed height so cards look neat */
+  object-fit: cover;    /* keeps images nicely cropped */
+  border-radius: 10px;
+  display: block;
+  margin-top: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+/* If a card has 2 images, show them side-by-side */
+.card img + img{
+  margin-top: 10px;
+}
+
+/* Better for multiple images (Household/Custom) */
+.card img:nth-child(3),
+.card img:nth-child(4),
+.card img:nth-child(5),
+.card img:nth-child(6){
+  /* no special styling needed; kept for stability */
+}
+
+/* Make cards with 2 images look better on wider screens */
+@media (min-width: 750px){
+  /* Turn the images area into a 2-column grid when there are multiple images */
+  .card{
+    display: block;
+  }
+
+  /* Wrap effect using CSS only: we’ll use a simple rule:
+     if there are 2 images, they will naturally stack; this is still fine.
+     If you want side-by-side, you can later wrap images in a div and grid them.
+  */
+}
+
+/* Responsive */
+@media (max-width: 600px){
+  h1{ font-size: 1.5rem; }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links{
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  section{
+    padding: 30px 16px;
+  }
+
+  .card img{
+    height: 150px;
+  }
+}
+footer{
+background-color: #0b3d5c;
+  color: rgb(245, 243, 243);
+
+  text-align: center;
+
+  padding:20px;
+}
